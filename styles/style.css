@@ -204,7 +204,8 @@ header .jumbotron .nav-sect .nav-items .nav-item:hover .btn-arrow {
   max-width: 600px;
 }
 
-footer, .navigations .navbar {
+footer,
+.navigations .navbar {
   background-color: #dedede;
 }
 .footer {
@@ -281,17 +282,13 @@ footer, .navigations .navbar {
 }
 
 /* navigations */
-.navigations .navbar-brand{
+.navigations .navbar-brand {
   width: 20%;
 }
 .navigations .container {
   border: none;
   padding: 0.5rem;
 }
-
-
-
-
 
 /* Media Queries */
 
@@ -303,10 +300,12 @@ footer, .navigations .navbar {
 }
 
 @media screen and (max-width: 768px) {
-  nav .logo-section, .navigations .navbar-brand {
+  nav .logo-section,
+  .navigations .navbar-brand {
     padding-bottom: 0px;
   }
-  nav .logo-section img, .navigations .navbar-brand {
+  nav .logo-section img,
+  .navigations .navbar-brand {
     width: 25%;
   }
   .jumbotron {
@@ -375,6 +374,10 @@ footer, .navigations .navbar {
 @media screen and (max-width: 480px) {
   nav .logo-section img {
     width: 45%;
+  }
+  .navigations .navbar-brand{
+    width: 30%;
+    margin-left: 0.8rem;
   }
   nav .logo-section {
     padding: 1rem 0 1rem 1rem;
