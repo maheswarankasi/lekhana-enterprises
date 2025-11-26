@@ -109,8 +109,7 @@ header .jumbotron .nav-sect .nav-items .nav-item:hover .btn-arrow {
   margin-top: 1rem;
 }
 .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0 !important;
   border-bottom: 1px solid #757474;
 }
 .why-us .why-us-flex {
@@ -131,7 +130,7 @@ header .jumbotron .nav-sect .nav-items .nav-item:hover .btn-arrow {
   width: 32%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
 }
 .why-us .why-us-item .why-us-icon svg,
@@ -210,13 +209,14 @@ footer,
 }
 .footer {
   border: none !important;
-  padding: 2rem;
+  padding: 2rem !important;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
+  margin-top: 2rem;
 }
 .footer .footer-address {
   width: 40%;
@@ -292,7 +292,52 @@ footer,
 
 /* services */
 .main-content {
-  margin-top: 12rem;
+  margin-top: 14rem;
+}
+.service-content {
+  margin: 1rem;
+}
+.service-content p {
+  font-size: 1.2rem;
+  padding: 0 1rem 1.2rem;
+}
+.service-content h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.service-content h4 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.service-content ul {
+  margin: 0 1rem 1rem;
+}
+.service-content ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.contact-us-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.contact-us-btn a {
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #d09e07;
+  border-radius: 6px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #d09e07;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.contact-us-btn a:hover {
+  background-color: #fff;
+  border: 2px solid #d09e07;
+  color: #d09e07;
 }
 
 /* Media Queries */
@@ -341,7 +386,7 @@ footer,
     margin-top: 0.7rem;
   }
   .why-us .why-us-flex {
-    margin: 1rem auto;
+    margin: 1rem 1rem;
   }
   .see-more-btn {
     border-width: 1.3px;
@@ -375,7 +420,7 @@ footer,
     font-size: 2rem;
   }
   .main-content {
-    margin-top: 8rem;
+    margin-top: 11rem;
   }
 }
 /* Small Devices */
@@ -383,7 +428,7 @@ footer,
   nav .logo-section img {
     width: 45%;
   }
-  .navigations .navbar-brand{
+  .navigations .navbar-brand {
     width: 30%;
     margin-left: 0.8rem;
   }
@@ -393,6 +438,7 @@ footer,
   header .jumbotron .tag-line-sect h1 {
     font-size: 2.5rem;
     line-height: 3.2rem;
+    margin-left: 1rem;
   }
   header .jumbotron .nav-sect h3 {
     font-size: 1.8rem;
@@ -404,6 +450,21 @@ footer,
     font-size: 1.5rem;
   }
   .main-content {
-    margin-top: 6rem;
+    margin-top: 9rem;
+  }
+  .service-content {
+    margin: 1rem 0;
+  }
+  .service-content p {
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+  }
+  .service-content h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+  }
+  .service-content ul li {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
   }
 }
