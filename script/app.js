@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
   // Show loader for 0.5s
-  setTimeout(function(){
-    $(".loader").fadeOut("slow", function(){
+  setTimeout(function () {
+    $(".loader").fadeOut("slow", function () {
       // After loader hides, show content smoothly
       $(".content").fadeIn(1000);
     });
