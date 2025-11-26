@@ -340,6 +340,31 @@ footer,
   color: #d09e07;
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #d09e07;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #d09e07;
+  text-align: center;
+  border-radius: 50%;
+}
+#backToTop i {
+  font-size: 2.5rem;
+}
+
+#backToTop:hover {
+  background-color: transparent;
+  color: #d09e07;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {

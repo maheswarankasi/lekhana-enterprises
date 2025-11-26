@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,26 +18,27 @@
   <!-- <meta property="og:url" content="https://cdad.in/"> -->
 
   <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="../assets/bootstrap/bootstrap.bundle.min.js"
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-  crossorigin="anonymous"></script>
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="../assets/bootstrap/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
 
+<body>
+  <!-- Header -->
   <header>
     <div class="navigations">
       <nav class="navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="../index.html"><img src="../assets/images/brand-logo.png"
               alt="Lekhana Enterprises | Gas Pipeline Installations logo" style="width: 100%;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" style="margin-right: 1rem;"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" style="width: 250px !important;" id="offcanvasNavbar"
@@ -69,15 +71,66 @@
     </div>
   </header>
 
+  <!-- Gallery content -->
   <section class="main-content">
     <div class="container">
       <h2>Gallery</h2>
+      <div class="service-content gallery">
+        <p>At Lekhana Enterprises, every project reflects our commitment to safety, precision, and customer
+          satisfaction. Explore our gallery to see how we bring reliable energy solutions to homes, businesses, and
+          industries across Tamil Nadu.</p>
+        <p>Our gallery captures the journey of gas pipeline installations — from planning and design to execution and
+          maintenance. Each image represents the trust our clients place in us and the expertise we deliver in every
+          project. Whether it’s a domestic kitchen pipeline, a large-scale commercial setup, or industrial
+          infrastructure, we ensure quality and compliance at every step.</p>
+        <div class="gallery-sect">
+          <div class="gallery-item">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gas-pipeline-1-modal">
+              <img src="../assets/gallery/gas-pipeline-1.webp" alt="">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="gas-pipeline-1-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <img src="../assets/gallery/gas-pipeline-1.webp" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gas-pipeline-2-modal">
+              <img src="../assets/gallery/gas-pipeline-2.jpg" alt="">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="gas-pipeline-2-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <img src="../assets/gallery/gas-pipeline-2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gas-pipeline-3-modal">
+              <img src="../assets/gallery/gas-pipeline-3.jfif" alt="">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="gas-pipeline-3-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <img src="../assets/gallery/gas-pipeline-3.jfif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us-btn"><a href="tel:1234567890" target="_self">Schedule your service now</a></div>
     </div>
   </section>
 
-
   <!-- Footer -->
-  <footer style="margin-top: 20rem;">
+  <footer>
     <div class="container footer">
       <div class="footer-address">
         <h3>Lekhana Enterprises <br />Gas Pipeline Installations</h3>
@@ -108,17 +161,18 @@
       <p>crafted by &#10084;&#65039; Maheswaran kasi</p>
     </div>
   </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop"><i class="fa-solid fa-angle-up"></i></button>
 
-
-
-
-
-
-
+  <!-- Scripts -->
   <script src="../assets/bootstrap/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="../assets/bootstrap/bootstrap.min.js"
-  integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-<script src="../assets/jQuery/jquery-3.7.1.min.js"></script>
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="../assets/bootstrap/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script src="../assets/jQuery/jquery-3.7.1.min.js"></script>
+  <script src="../script/app.js"></script>
 </body>
+
 </html>
