@@ -20,7 +20,7 @@ section {
 }
 
 /* Header */
-header {
+#homePage header {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)),
     url("../assets/images/jumbotron-bg.jpg") no-repeat right;
   background-size: cover;
@@ -204,7 +204,7 @@ header .jumbotron .nav-sect .nav-items .nav-item:hover .btn-arrow {
   max-width: 600px;
 }
 
-footer {
+footer, .navigations .navbar {
   background-color: #dedede;
 }
 .footer {
@@ -280,18 +280,18 @@ footer {
   text-align: right;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+/* navigations */
+.navigations .navbar-brand{
+  width: 20%;
 }
+.navigations .container {
+  border: none;
+  padding: 0.5rem;
+}
+
+
+
+
 
 /* Media Queries */
 
@@ -303,10 +303,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  nav .logo-section {
+  nav .logo-section, .navigations .navbar-brand {
     padding-bottom: 0px;
   }
-  nav .logo-section img {
+  nav .logo-section img, .navigations .navbar-brand {
     width: 25%;
   }
   .jumbotron {
