@@ -349,20 +349,25 @@ footer,
   background-color: #d09e07;
   color: white;
   cursor: pointer;
-  font-size: 16px;
-  width: 80px;
-  height: 80px;
+  font-size: 10px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #d09e07;
   text-align: center;
   border-radius: 50%;
+  padding: 4px 3px;
 }
 #backToTop i {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
 
 #backToTop:hover {
   background-color: transparent;
   color: #d09e07;
+}
+.reviews-frame {
+  width: 100%;
+  min-height: 500px;
 }
 
 /* Media Queries */
@@ -446,14 +451,6 @@ footer,
   }
   .main-content {
     margin-top: 11rem;
-  }
-  #backToTop{
-    width: 40px;
-    height: 40px;
-    padding: 6px 3px;
-  }
-  #backToTop i {
-    font-size: 1.5rem;
   }
 }
 /* Small Devices */
