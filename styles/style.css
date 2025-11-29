@@ -219,12 +219,13 @@ footer,
   margin-top: 2rem;
 }
 .footer .footer-address {
-  width: 40%;
+  width: 30%;
 }
 .footer .footer-address address {
   font-size: 1.2rem;
   color: #333;
-  margin-bottom: 0 !important;
+  margin: 0.2rem 0 1rem;
+  max-width: 400px;
 }
 .footer h3 {
   font-size: 1.8rem;
